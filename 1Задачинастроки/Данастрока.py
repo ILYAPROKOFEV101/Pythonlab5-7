@@ -25,7 +25,5 @@ def rearrange_string():
 
     return ''.join(result)
 
-
-
 output_string = rearrange_string()
 print(output_string)
