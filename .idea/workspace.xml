@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8c0f942-7222-4023-943e-11581ae9be5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1Задачинастроки/number10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Задачинастроки/number10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Задачинастроки/number6.py" beforeDir="false" afterPath="$PROJECT_DIR$/1Задачинастроки/number6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Задачинастроки/number8.py" beforeDir="false" afterPath="$PROJECT_DIR$/1Задачинастроки/number8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Задачинастроки/Данастрока.py" beforeDir="false" afterPath="$PROJECT_DIR$/1Задачинастроки/Данастрока.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Задачинастроки/Данастрокаabc.py" beforeDir="false" afterPath="$PROJECT_DIR$/1Задачинастроки/Данастрокаabc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3Задачинасловари/2Задачинасловари.py" beforeDir="false" afterPath="$PROJECT_DIR$/3Задачинасловари/2Задачинасловари.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
