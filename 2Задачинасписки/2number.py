@@ -1,14 +1,28 @@
-def is_valid_extension(filename, allowed_extensions):
-    # Получаем расширение файла
-    file_extension = filename.split('.')[-1].lower()  # Преобразуем расширение в нижний регистр
-    # Проверяем, входит ли расширение в список допустимых
-    return file_extension in allowed_extensions
+def replace_elements(lst, old_value, new_value):
+    # Заменяем old_value на new_value в каждом элементе списка
+    for i in range(len(lst)):
+        lst[i] = lst[i].replace(old_value, new_value)
+    return lst
 
-# Пример использования
-filename = input("Введите имя файла: ")
-allowed_extensions = ['jpg', 'png', 'gif', 'txt', 'pdf', 'py', "kt", 'cpp']  # Список допустимых расширений
 
-if is_valid_extension(filename, allowed_extensions):
-    print("Расширение файла допустимо.")
-else:
-    print("Недопустимое расширение файла.")
+
+try:
+#Ввод данных
+    input_list = input("Введите элементы списка, разделенные запятыми: ")
+    old_value = input("Введите значение, которое нужно заменить: ")
+    new_value = input("Введите новое значение: ")
+
+    # Преобразуем ввод в список
+    lst = [elem.strip() for elem in input_list.split(',')]
+
+    if not lst:
+        raise ValueError("Список не должен быть пустым.")
+
+    # Замена значений
+    modified_list = replace_elements(lst, old_value, new_value)
+    print("Измененный список:", modified_list)
+
+except ValueError as ve:
+    print("Ошибка:", ve)
+except Exception as e:
+    print("Произошла ошибка:", e)

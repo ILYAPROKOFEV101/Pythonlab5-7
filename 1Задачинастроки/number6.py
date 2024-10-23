@@ -1,4 +1,4 @@
-import re
+import re  # Импортируем модуль re для работы с регулярными выражениями
 
 
 def extract_words(input_string, delimiters):
@@ -13,8 +13,19 @@ def extract_words(input_string, delimiters):
 
 
 # Пример использования
-input_string = input("Введите строку со словами: ")
-delimiters = input("Введите символы-разделители: ")
-words = extract_words(input_string, delimiters)
+try:
+    input_string = input("Введите строку со словами: ")
+    delimiters = input("Введите символы-разделители: ")
 
-print("Слова в строке:", words)
+    # Проверка, что строка не пустая
+    if not input_string or not delimiters:
+        raise ValueError("Строка со словами и разделители не должны быть пустыми.")
+
+    words = extract_words(input_string, delimiters)
+
+    print("Слова в строке:", words)
+
+except ValueError as ve:
+    print("Ошибка:", ve)
+except Exception as e:
+    print("Произошла ошибка:", e)

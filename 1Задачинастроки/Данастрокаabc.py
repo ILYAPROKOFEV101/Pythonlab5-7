@@ -8,6 +8,10 @@ def modify_string(s):
     return s
 
 # Пример использования
-input_string = input("Введите строку: ")
-output_string = modify_string(input_string)
-print(output_string)
+try:
+    input_string = input("Введите строку: ")
+    output_string = modify_string(input_string)
+    print("Результат:", output_string)
+
+except Exception as e:
+    print("Произошла ошибка:", e)

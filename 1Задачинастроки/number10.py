@@ -22,8 +22,8 @@ def is_secure_password(password):
     has_upper = any(c.isupper() for c in password)
     has_lower = any(c.islower() for c in password)
     has_digit = any(c.isdigit() for c in password)
-    has_special = any(c in string.punctuation for c in password)
-    return has_upper and has_lower and has_digit and has_special
+
+    return has_upper and has_lower and has_digit
 
 
 # Функция для шифрования пароля с помощью SHA-256
@@ -38,6 +38,7 @@ def process_password():
 
     if choice == '1':
         password = generate_password()
+
         print(f"Ваш сгенерированный пароль: {password}")
 
     elif choice == '2':
@@ -45,12 +46,9 @@ def process_password():
         while len(password) < 6:
             print("Пароль должен содержать не менее 6 символов.")
             password = input("Введите другой пароль: ")
-
-        if is_secure_password(password):
+        else:
             hashed_password = hash_password(password)
             print(f"Ваш зашифрованный пароль (SHA-256): {hashed_password}")
-        else:
-            print("Пароль не соответствует требованиям безопасности. Пароль не был зашифрован.")
     else:
         print("Неверный выбор!")
 
